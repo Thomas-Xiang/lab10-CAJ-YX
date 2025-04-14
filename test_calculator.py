@@ -16,19 +16,19 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(-1, -3), -4)
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(sub(2, 3), -1)
-        self.assertEqual(sub(4, 3), 1)
-        self.assertEqual(sub(5, 5), 0)
+        self.assertEqual(subtract(2, 3), -1)
+        self.assertEqual(subtract(4, 3), 1)
+        self.assertEqual(subtract(5, 5), 0)
     # ##########################
 
     ######## Partner 1
     def test_mul(self): # 3 assertions
-        self.assertEqual(multiply(4,3), 12)
-        self.assertEqual(multiply(-1,7), -7)
+        self.assertEqual(mul(4,3), 12)
+        self.assertEqual(mul(-1,7), -7)
 
     def test_div(self): # 3 assertions
-        self.assertEqual(divide(2, 8), 4)
-        self.assertAlmostEqual(divide(0.5, 2.0), 2.0)
+        self.assertEqual(div(2, 8), 4)
+        self.assertAlmostEqual(div(0.5, 2.0), 2.0)
     # ##########################
 
     ######## Partner 2
@@ -41,9 +41,9 @@ class TestCalculator(unittest.TestCase):
         
 
     def test_logarithm(self): # 3 assertions
-        self.assertEqual(log(4, 2), 0.5)
-        self.assertEqual(log(3, 9), 2)
-        self.assertEqual(log(3, 3), 1)
+        self.assertEqual(logarithm(4, 2), 0.5)
+        self.assertEqual(logarithm(3, 9), 2)
+        self.assertEqual(logarithm(3, 3), 1)
 
     def test_log_invalid_base(self): # 1 assertion
         # use same technique from test_divide_by_zero
