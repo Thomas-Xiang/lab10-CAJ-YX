@@ -1,12 +1,4 @@
 # github link: https://github.com/Thomas-Xiang/lab10-CAJ-YX.git
-
-"""
-calculator.py
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
-
 # https://github.com/CelineJaime/lab10-CAJ-YX.git
 # Partner 1: Celine Jaime
 # Partner 2: Thomas Xiang
