@@ -1,13 +1,19 @@
+# github link: https://github.com/Thomas-Xiang/lab10-CAJ-YX.git
+
 import unittest
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-    # def test_add(self): # 3 assertions
-    #     fill in code
+    def test_add(self): # 3 assertions
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 3), 2)
+        self.assertEqual(add(-1, -3), -4)
 
-    # def test_subtract(self): # 3 assertions
-    #     fill in code
+    def test_subtract(self): # 3 assertions
+        self.assertEqual(sub(2, 3), -1)
+        self.assertEqual(sub(4, 3), 1)
+        self.assertEqual(sub(5, 5), 0)
     # ##########################
 
     ######## Partner 1
@@ -19,18 +25,24 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 2
-    # def test_divide_by_zero(self): # 1 assertion
-    #     # call division function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     div(0, 5)
-    #     fill in code
+    def test_divide_by_zero(self): # 1 assertion
+        # call division function inside, example:
+        with self.assertRaises(ZeroDivisionError):
+            div(0, 5)
+        self.assertEqual(div(2, 6), 3)
+        self.assertEqual(div(1, 6), 6)
+        
 
-    # def test_logarithm(self): # 3 assertions
-    #     fill in code
+    def test_logarithm(self): # 3 assertions
+        self.assertEqual(log(4, 2), 0.5)
+        self.assertEqual(log(3, 9), 2)
+        self.assertEqual(log(3, 3), 1)
 
-    # def test_log_invalid_base(self): # 1 assertion
-    #     # use same technique from test_divide_by_zero
-    #     fill in code
+    def test_log_invalid_base(self): # 1 assertion
+        # use same technique from test_divide_by_zero
+        self.assertEqual(exp(2, 2), 4)
+        self.assertEqual(exp(2, 3), 8)
+        self.assertEqual(exp(4, 2), 16)
     # ##########################
     
     ######## Partner 1
