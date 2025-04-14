@@ -6,7 +6,7 @@ import unittest
 from calculator import *
 import unittest
 import math
-from calculator import mul, div, logarithm, hypotenuse, square_root
+from calculator import multiply, divide, logarithm, hypotenuse, square_root
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
