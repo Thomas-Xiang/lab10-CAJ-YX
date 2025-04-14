@@ -28,7 +28,7 @@ def subtract(a, b):
 def mul(a, b):
     return a * b
 
-def div(a, b):
+def divide(a, b):
     if a == 0:
         raise ZeroDivisionError
     return b / a
