@@ -6,7 +6,7 @@ import unittest
 from calculator import *
 import unittest
 import math
-from calculator import multiply, divide, logarithm, hypotenuse, square_root
+from calculator import mul, div, logarithm, hypotenuse, square_root
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
@@ -22,11 +22,11 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 1
-    def test_multiply(self): # 3 assertions
+    def test_mul(self): # 3 assertions
         self.assertEqual(multiply(4,3), 12)
         self.assertEqual(multiply(-1,7), -7)
 
-    def test_divide(self): # 3 assertions
+    def test_div(self): # 3 assertions
         self.assertEqual(divide(2, 8), 4)
         self.assertAlmostEqual(divide(0.5, 2.0), 2.0)
     # ##########################
